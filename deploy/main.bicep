@@ -1,4 +1,4 @@
-@description('Suffix for naming resources')
+@description('Suffix for naming resource')
 param appNameSuffix string = 'app${uniqueString(resourceGroup().id)}'
 
 @allowed([
