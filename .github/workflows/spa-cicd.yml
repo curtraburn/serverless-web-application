@@ -9,31 +9,31 @@ on:
       APP_NAME_PREFIX: 
         description: 'Prefix to be used in naming Azure resources'
         required: true
-        default: 'prefix'
+        default: 'serv'
       RESOURCE_GROUP_NAME: 
         description: 'Resource Group to deploy Azure resources'
         required: true
-        default: 'resource-group'
+        default: 'serverless-rg'
       CLIENT_URL: 
         description: 'Client URL'
         required: true
-        default: 'https://<cdn-endpoint-name>.azureedge.net'
+        default: 'https://serverless-cdn.azureedge.net'
       API_URL: 
         description: 'API on APIM URL'
         required: true
-        default: 'https://<apim-name>.azure-api.net/<api-name>'
+        default: 'https://serverless-api.azure-api.net/<api-name>'
       AZURE_STORAGE_NAME: 
         description: 'Azure storage account name'
         required: true
-        default: 'storageaccountname'
+        default: 'serverlesscurt77'
       CDN_PROFILE_NAME: 
         description: 'CDN profile name'
         required: true
-        default: 'cdn-profile-name'
+        default: 'cdn-pfl'
       CDN_ENDPOINT_NAME: 
         description: 'CDN endpoint name'
         required: true
-        default: 'cdn-endpoint-name'                        
+        default: 'serverless-cdn'                        
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
