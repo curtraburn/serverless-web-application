@@ -22,7 +22,7 @@ param apimResourceGroup string = resourceGroup().name
 param createKeyVault bool = true
 
 @description('Key Vault name')
-param keyVaultName string = 'kv-${appNameSuffix}-${environmentType}'
+param keyVaultName string = 'kv-${appNameSuffix}-${environmentType}-curt77'
 
 @description('Key Vault resource group')
 param keyVaultResourceGroup string = resourceGroup().name
