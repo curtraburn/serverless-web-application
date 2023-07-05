@@ -21,19 +21,19 @@ on:
       API_DOCUMENT_URL: 
         description: 'API definition URL'
         required: true
-        default: 'https://serverless-fnc.azurewebsites.net/api/swagger.json'
+        default: 'https://fn-serv-dev.azurewebsites.net/api/swagger.json'
       APIM_NAME: 
         description: 'APIM name'
         required: true
-        default: 'serverless-api'
+        default: 'apim-serv-dev'
       FUNCTION_NAME: 
         description: 'Azure Functions name'
         required: true
-        default: 'serverless-fnc'
+        default: 'fn-serv-dev'
       ORIGIN_URL: 
         description: 'Client app URL' # This is CDN endpoint URL
         required: true
-        default: 'https://serverless-cdn.azureedge.net'              
+        default: 'https://serv-dev.azureedge.net'              
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
