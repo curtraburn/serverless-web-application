@@ -33,7 +33,7 @@ on:
       CDN_ENDPOINT_NAME: 
         description: 'CDN endpoint name'
         required: true
-        default: 'cdn-serv-dev'                        
+        default: 'serv-dev'                        
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
@@ -81,7 +81,7 @@ jobs:
         .\${{ env.BICEP_FILE_PATH }}\scripts\appRegistrationAndPermission.ps1 `
         -clientName ${{ env.APP_NAME_PREFIX }}${{ env.ENVIRONMENT_TYPE }} `
         -apiName fn-${{ env.APP_NAME_PREFIX }}-${{ env.ENVIRONMENT_TYPE }} `
-        -resourceGroup ${{ env.APP_NAME_PREFIX }}-${{ env.ENVIRONMENT_TYPE }}-rg `
+        -resourceGroup ${{ github.event.inputs.RESOURCE_GROUP_NAME }} `
         -staticWebURL https://${{ env.APP_NAME_PREFIX }}-${{ env.ENVIRONMENT_TYPE }}.azureedge.net
 
     # Set app configurations of Angular
