@@ -13,15 +13,15 @@ on:
       RESOURCE_GROUP_NAME: 
         description: 'Resource Group to deploy Azure resources'
         required: true
-        default: 'serverless-rg'
+        default: 'serverless-infra-rg'
       CLIENT_URL: 
         description: 'Client URL'
         required: true
-        default: 'https://serverless-cdn.azureedge.net'
+        default: 'https://serv-dev.azureedge.net'
       API_URL: 
         description: 'API on APIM URL'
         required: true
-        default: 'https://serverless-api.azure-api.net/<api-name>'
+        default: 'https://serverless-api.azure-api.net/2do'
       AZURE_STORAGE_NAME: 
         description: 'Azure storage account name'
         required: true
@@ -29,11 +29,11 @@ on:
       CDN_PROFILE_NAME: 
         description: 'CDN profile name'
         required: true
-        default: 'cdn-pfl'
+        default: 'cdn-serv-dev'
       CDN_ENDPOINT_NAME: 
         description: 'CDN endpoint name'
         required: true
-        default: 'serverless-cdn'                        
+        default: 'cdn-serv-dev'                        
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
